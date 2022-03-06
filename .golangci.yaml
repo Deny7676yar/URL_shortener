@@ -73,13 +73,12 @@ linters:
     - deadcode
     - dogsled
     - dupl
-    #- errcheck
+    - errcheck
     - exportloopref
     - exhaustive
     - funlen
     - gochecknoinits
     - goconst
-    #- gocritic
     - gocyclo
     - gofmt
     - goimports

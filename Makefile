@@ -1,12 +1,28 @@
 
+# build and run the application
+.PHONY: run
+run:
+	go run ./cmd/shortener_url/main.go
+
+# build
+.PHONY: build
+build: test lint
+	go build -o shortener_url ./cmd/shortener_url/main.go 
+
+# run tests
+.PHONY: test
 test:
-	@echo "[go test] running tests and collecting coverage metrics"
-	@go test -v -tags all_tests -race -coverprofile=coverage.txt -covermode=atomic ./...
+	go test -v ./...
 
+# run linters 
+.PHONY: lint
 lint:
-	@echo "[golangci-lint] linting sources"
-	@golangci-lint run ./...
+	golangci-lint run ./...
+	pre-commit run --verbose
 
-go-build:
-	@echo "  >  Building binary..."
-	@go build ./cmd/app/main.go
+# generate pre-commit hooks accouding to .pre-commit-config.yaml
+.PHONY: pre-commit
+pre-commit:
+	pre-commit install
+
+.DEFAULT_GOAL := run
