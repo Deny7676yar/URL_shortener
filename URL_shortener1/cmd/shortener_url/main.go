@@ -35,7 +35,7 @@ func main() {
 	// h := defmux.NewRouter(hs)
 	h := routergin.NewRouterGin(hs)
 	//h := routeropenapi.NewRouterOpenAPI(hs)
-	srv := server.NewServer(":8000", h)
+	srv := server.NewServer(":"+os.Getenv("PORT"), h)
 
 	srv.Start(us)
 	log.WithFields(log.Fields{
