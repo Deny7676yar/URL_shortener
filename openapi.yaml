@@ -24,7 +24,7 @@ paths:
         schema:
           type: string
       responses:
-        201:
+        200:
           description: successful operation
           headers:
             X-Expires-After:
@@ -47,7 +47,7 @@ paths:
       summary: Logs out current logged in user session
       operationId: logoutUser
       responses:
-        201:
+        200:
           description: successful logout
           content: {}
   
@@ -55,7 +55,7 @@ paths:
     post:
       tags:
         - URL
-      summary: Creates a new url 'short URL'
+      summary: Creates a new pair 'short URL - long URL'
       operationId: NewLink
       requestBody:
         description: Item object that needs to be added to the store
@@ -67,7 +67,7 @@ paths:
       security:
         - api_key: []
       responses:
-        201:
+        200:
           description: successful operation
           content: {}
         400:
@@ -127,7 +127,7 @@ paths:
     get:
       tags:
         - LinksRank
-      summary: Implementation of visiting a short link
+      summary: Implements redirect to the long-URL that corresponds to specified short URL
       operationId: Redirect
       parameters:
       - name: linkID
@@ -166,13 +166,10 @@ components:
       properties:
         linkID:
           type: string
-        originLink:
+        longURL:
           type: string
-        resultLink:
+        description:
           type: string
-        linkAt:
-          type: string
-          format: date-time
         linksRank:
           type: integer
           format: int64

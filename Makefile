@@ -2,12 +2,12 @@
 # build and run the application
 .PHONY: run
 run:
-	go run ./cmd/shortener/main.go
+	go run ./cmd/shortener_url/main.go
 
 # build
 .PHONY: build
 build: test lint
-	go build -o shortener ./cmd/shortener/main.go 
+	go build -o shortener_url ./cmd/shortener_url/main.go 
 
 # run tests
 .PHONY: test
