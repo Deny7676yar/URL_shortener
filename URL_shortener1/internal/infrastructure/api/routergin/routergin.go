@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/Deny7676yar/URL_shortener/URL_shortener/internal/infrastructure/api/handler"
+	"github.com/Deny7676yar/URL_shortener/URL_shortener1/internal/infrastructure/api/handler"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/render"
 	"github.com/google/uuid"

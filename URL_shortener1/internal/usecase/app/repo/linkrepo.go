@@ -8,7 +8,7 @@ import (
 	"sync"
 	"unicode"
 
-	"github.com/Deny7676yar/URL_shortener/URL_shortener/internal/entities/linkentity"
+	"github.com/Deny7676yar/URL_shortener/URL_shortener1/internal/entities/linkentity"
 	"github.com/google/uuid"
 
 	log "github.com/sirupsen/logrus"

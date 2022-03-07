@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Deny7676yar/URL_shortener/URL_shortener/internal/test"
+	"github.com/Deny7676yar/URL_shortener/URL_shortener1/internal/test"
 	gc "gopkg.in/check.v1"
 )
 

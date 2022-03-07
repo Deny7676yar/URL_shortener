@@ -7,11 +7,11 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Deny7676yar/URL_shortener/URL_shortener/internal/infrastructure/api/handler"
-	"github.com/Deny7676yar/URL_shortener/URL_shortener/internal/infrastructure/api/routergin"
-	"github.com/Deny7676yar/URL_shortener/URL_shortener/internal/infrastructure/db/pgstore"
-	"github.com/Deny7676yar/URL_shortener/URL_shortener/internal/infrastructure/server"
-	"github.com/Deny7676yar/URL_shortener/URL_shortener/internal/usecase/app/repo"
+	"github.com/Deny7676yar/URL_shortener/URL_shortener1/internal/infrastructure/api/handler"
+	"github.com/Deny7676yar/URL_shortener/URL_shortener1/internal/infrastructure/api/routergin"
+	"github.com/Deny7676yar/URL_shortener/URL_shortener1/internal/infrastructure/db/pgstore"
+	"github.com/Deny7676yar/URL_shortener/URL_shortener1/internal/infrastructure/server"
+	"github.com/Deny7676yar/URL_shortener/URL_shortener1/internal/usecase/app/repo"
 	log "github.com/sirupsen/logrus"
 )
 

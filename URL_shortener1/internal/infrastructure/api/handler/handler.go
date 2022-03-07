@@ -7,9 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Deny7676yar/URL_shortener/URL_shortener/internal/entities/linkentity"
-	"github.com/Deny7676yar/URL_shortener/URL_shortener/internal/usecase/app/repo"
-
+	"github.com/Deny7676yar/URL_shortener/URL_shortener1/internal/entities/linkentity"
+	"github.com/Deny7676yar/URL_shortener/URL_shortener1/internal/usecase/app/repo"
 	"github.com/google/uuid"
 )
 
