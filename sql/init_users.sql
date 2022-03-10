@@ -9,3 +9,5 @@ CREATE TABLE public.links (
 	rank integer,
 	CONSTRAINT links_pk PRIMARY KEY (id)
 );
+
+CREATE INDEX concurrently resultLink_idx ON public.links (originLink);
